@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>彩色连连看 by twobin</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
+<link rel="stylesheet" type="text/css" href="css/main.css"></link>
+<!--<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.color.js"></script> -->
+<script type="text/javascript" src="js/linkGame.js"></script>
+</head>
+<body>
+
+<div class="head clearfix">
+<h1><a href="http://www.cnblogs.com/twobin/">twobin’ <span id="blog">blog</span></a></h1><span id="subtitle">jQuery系列小游戏　|　彩色连连看...</span>
+</div>
+
+<div class="wrap">
+	<div class="play_wrap clearfix">
+        <div id="play_time">
+            <div id="play_time_b" class="play_time_b">
+                <div id="play_time_p"></div>
+                <div id="play_time_t">100</div>
+            </div>
+            
+        </div>
+        <div id="play_score">得分：<span id="play_score_s">0</span></div>
+		<div id="play_area"></div>
+    </div>
+    <div class="play_menu">
+        <div class="play_btn clearfix">
+        	<a id="play_btn_start" class="play_btn" href="javascript:void(0);" unselectable="on">开始</a>
+            <a id="play_btn_reset" class="play_btn" href="javascript:void(0);" unselectable="on">重来</a>
+            <a id="play_btn_help" class="play_btn" href="#" rel="popover" title="游戏帮助说明" data-content="jQ连连看游戏规则：即两个图片连线少于等于2个折点则为成功；游戏时间为100秒，过关奖励10秒；配对一对图片得分为10分。更多信息，请进入我的博客：http://www.cnblogs.com/twobin/">帮助说明</a>
+        </div>
+        <!-- <div class="play_info">
+            <p>说明：
+            -普通连连看规则，即两个图片连线少于等于2个折点则为成功；
+
+            -游戏时间为100秒，过关奖励10秒；
+
+            -配对一对图片得分为10分；（后续版本的想法：添加道具（立即消除3-5对、全部变成2种图片），添加游戏难度级别，添加音效和特效）
+            
+            -更多信息，请进入我的博客：<a href="http://www.cnblogs.com/twobin/" target="_blank">twobin的博客</a>
+            </p>
+        </div> -->
+
+    </div>
+        
+</div>
+<script>
+    $("a[rel=popover]").popover();
+</script>
+</body>
+</html>
